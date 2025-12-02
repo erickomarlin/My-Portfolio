@@ -1,0 +1,702 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  --color1: #2e2d2d;
+  --accent1: hsl(202, 58%, 48%);
+  --accent2: #0c7ec074;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#page1 {
+  width: 100%;
+  height: 600px;
+}
+
+#navbar {
+  width: 90%;
+  max-width: 1280px;
+  top: 0px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 3;
+  background-color: #000;
+  padding-top: 15px;
+}
+
+.personal-logo {
+  width: 100px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px #fff;
+}
+
+.directory {
+  width: 300px;
+  height: auto;
+  box-shadow: 3px 3px 10px #fff;
+  border-radius: 15px;
+  background-color: black;
+  color: var(--accent1);
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-around;
+  font-family: Arial;
+  font-weight: bold;
+  margin-left: -40px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+.social {
+  width: 130px;
+  height: auto;
+  box-shadow: 3px 3px 10px #fff;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: black;
+}
+
+.icon-navbar {
+  font-size: 1rem;
+}
+
+#music-toggle {
+  width: 125px;
+  height: 40px;
+  margin-top: 35px;
+}
+
+.video-text-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.video-text-container video {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2d2d;
+  color: #fff;
+  mix-blend-mode: multiply;
+}
+
+.text-overlay h1 {
+  font-size: 18vw;
+  font-family: "Arial Black", sans-serif;
+  text-transform: uppercase;
+}
+
+.text {
+  width: 80%;
+  min-height: 200px;
+  margin: 0 auto;
+  margin-top: 65px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.5rem;
+}
+
+.author-button-box {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#author {
+  text-align: left;
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+.quote-button {
+  width: 60px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #000;
+  font-weight: bold;
+}
+
+.quote-button:hover {
+  cursor: pointer;
+}
+
+#page2 {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding-top: 30px;
+}
+
+.project-giant-title {
+  font-size: 6vw;
+  font-family: "Arial Black", sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.list-of-projects {
+  text-align: left;
+  font-weight: bold;
+}
+
+.project-1 {
+  position: relative;
+  height: 90vh;
+  margin-top: 100px;
+  background-image: url(./assets/bali1.jpg);
+  background-size: cover;
+  background-position: center center;
+  border: 0.5px solid transparent;
+}
+
+.project-detail {
+  width: 30%;
+}
+
+.project-client,
+.project-year,
+.position,
+.project-name,
+.project-description,
+.project-link {
+  text-align: left;
+  margin-left: 50px;
+  color: black;
+}
+
+#la-lune-image {
+  position: absolute;
+  width: 60%;
+  top: 150px;
+  transform: translate(-20%, -15%);
+}
+
+.project-client {
+  font-family: Helvetica;
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-top: 100px;
+  margin-top: 140px;
+}
+
+.project-year {
+  font-family: Verdana;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.position {
+  font-family: "Lucida Console";
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 110px;
+}
+
+.project-name {
+  font-family: "Arial Narrow";
+  font-size: 2rem;
+  font-weight: 900;
+  z-index: 2;
+}
+
+.project-description {
+  font-family: "Arial Narrow";
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.project-link {
+  font-family: "Monaco";
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 150px;
+  border: 3px solid white;
+  color: white;
+  width: 150px;
+  padding: 15px;
+  text-align: center;
+}
+
+.project-2 {
+  position: relative;
+  height: 90vh;
+  background-image: url(./assets/bali2.jpg);
+  background-size: cover;
+  background-position: center center;
+  border: 0.5px solid transparent;
+  margin-top: 100px;
+}
+
+#studio-agatho-image {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  top: 150px;
+  transform: translate(-20%, 0%);
+}
+
+#page3-skills {
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+  padding-top: 50px;
+}
+
+.skill-title {
+  font-family: "Courier New";
+  font-size: 3rem;
+}
+
+.skill-description {
+  margin-top: -50px;
+}
+
+.front-end-container ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.design-container ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.management-container ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill-subtitle {
+  margin-top: 100px;
+  font-family: Optima;
+  font-size: 1.5rem;
+}
+
+.skill {
+  font-family: "Arial Narrow";
+  margin-left: -35px;
+  border: 1px solid #0c7ec0;
+  border-radius: 15px;
+  width: 100%;
+  background-color: #0c7ec058;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.fe {
+  display: inline-block;
+  animation: scrolling-animation1 3s linear infinite;
+}
+
+.ed {
+  display: inline-block;
+  animation: scrolling-animation2 3s linear infinite;
+}
+
+.mg {
+  display: inline-block;
+  animation: scrolling-animation3 3s linear infinite;
+}
+
+@keyframes scrolling-animation1 {
+  0% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes scrolling-animation2 {
+  0% {
+    transform: translateX(-15px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(-15px);
+  }
+}
+
+@keyframes scrolling-animation3 {
+  0% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+#page4-faq {
+  height: 100vh;
+}
+
+.bio {
+  width: 60%;
+  margin: 0px auto;
+}
+
+span {
+  font-size: 2rem;
+  color: #0c7ec0;
+}
+
+.faq {
+  margin-top: 100px;
+}
+
+.question1,
+.question2,
+.question3,
+.question4,
+.question5 {
+  border: 1px solid #0c7ec0;
+  background-color: #0c7ec058;
+  border-radius: 50px;
+  margin-top: 50px;
+  display: flex;
+}
+
+.question {
+  margin: 20px 0px;
+  text-align: left;
+  margin-left: 2%;
+  display: none;
+}
+
+.answer {
+  margin-top: -40px;
+  text-align: left;
+  display: none;
+}
+
+#page5-stay-connected {
+  height: 80vh;
+  margin-top: 140px;
+}
+
+.stay-connected {
+  color: var(--accent1);
+}
+
+.social-media-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-link {
+  width: 70%;
+  margin: 0 auto;
+}
+.box {
+  border-radius: 20px;
+  width: 100%;
+  margin: 10px auto;
+  padding-top: 15px;
+  border: 1px solid #0c7ec0;
+  background-color: #0c7ec058;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.social-media-name {
+  margin-top: -10px;
+}
+
+footer {
+  margin-top: 200px;
+  font-size: 0.8rem;
+
+  padding-bottom: 15px;
+}
+
+footer p {
+  margin-top: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+.navbar-list a:hover {
+  font-size: 0.9rem;
+}
+
+.contact-link:hover {
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  #navbar {
+    width: 80%;
+  }
+
+  .personal-logo {
+    transform: scale(0.8);
+  }
+
+  .directory {
+    transform: scale(0.8);
+  }
+  .social {
+    transform: scale(0.8);
+  }
+  .text {
+    width: 100%;
+  }
+  .quote-box {
+    transform: scale(0.7);
+    width: 100%;
+  }
+
+  .project-1 {
+    position: relative;
+    height: 50vh;
+  }
+
+  .project-detail {
+    width: 35%;
+    height: 50vh;
+  }
+
+  .project-client,
+  .project-year,
+  .position,
+  .project-name,
+  .project-description,
+  .project-link {
+    margin-left: 20px;
+  }
+
+  #la-lune-image {
+    position: relative;
+    width: 60%;
+    top: -50%;
+    right: -48%;
+    transform: translate(-50%, -50%);
+  }
+
+  .project-client {
+    font-size: 2vh;
+    margin-top: 20px;
+  }
+
+  .project-year {
+    font-size: 1vh;
+  }
+
+  .position {
+    font-size: 1vh;
+    margin-top: 50px;
+  }
+
+  .project-name {
+    font-size: 2vh;
+    font-weight: 900;
+  }
+
+  .project-description {
+    font-size: 1vh;
+    font-weight: 400;
+    margin-top: 0px;
+  }
+
+  .project-link {
+    font-size: 1.1vh;
+    margin-top: 50px;
+    width: 15vw;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .project-2 {
+    height: 50vh;
+    background-image: url(./assets/bali2.jpg);
+  }
+
+  #studio-agatho-image {
+    position: relative;
+    width: 60%;
+    height: 40%;
+    top: -50%;
+    right: -48%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bio {
+    margin-top: 70px;
+    width: 75%;
+    font-size: 3vw;
+  }
+
+  .question1,
+  .question2,
+  .question3,
+  .question4,
+  .question5 {
+    transform: scale(0.8);
+    margin-top: 25px;
+  }
+
+  footer {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  #navbar {
+    width: 90%;
+  }
+
+  .personal-logo {
+    transform: scale(0.9);
+  }
+
+  .directory {
+    transform: scale(0.9);
+  }
+  .social {
+    transform: scale(0.9);
+  }
+  .quote-box {
+    transform: scale(0.8);
+  }
+  .project-1 {
+    position: relative;
+    height: 50vh;
+  }
+
+  .project-detail {
+    width: 35%;
+    height: 50vh;
+  }
+
+  .project-client,
+  .project-year,
+  .position,
+  .project-name,
+  .project-description,
+  .project-link {
+    margin-left: 20px;
+  }
+
+  #la-lune-image {
+    position: relative;
+    width: 60%;
+    top: -65%;
+    right: -48%;
+    transform: translate(-50%, -50%);
+  }
+
+  .project-client {
+    font-size: 2vw;
+    margin-top: 50px;
+  }
+
+  .project-year {
+    font-size: 1vw;
+  }
+
+  .position {
+    font-size: 1vw;
+    margin-top: 60px;
+  }
+
+  .project-name {
+    font-size: 2vw;
+    font-weight: 900;
+  }
+
+  .project-description {
+    font-size: 1vw;
+    font-weight: 400;
+    margin-top: 0px;
+  }
+
+  .project-link {
+    font-size: 1.2vw;
+    margin-top: 80px;
+    width: 15vw;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .project-2 {
+    height: 50vh;
+    background-image: url(./assets/bali2.jpg);
+  }
+
+  #studio-agatho-image {
+    position: relative;
+    width: auto;
+    height: 25vw;
+    top: -70%;
+    right: -48%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bio {
+    margin-top: 70px;
+    width: 75%;
+    font-size: 3vw;
+  }
+
+  #page5-stay-connected {
+    margin-top: 400px;
+  }
+
+  footer {
+    margin-top: 60px;
+  }
+}
