@@ -17,7 +17,9 @@ const FaqToggle5: FC<FaqToggleProps> = () => {
   return (
     <div>
       <div
+        onClick={toggleDisplay}
         style={{
+          width: "100vw",
           display: "flex",
           alignItems: "center",
           paddingLeft: "15px",

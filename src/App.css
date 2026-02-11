@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   --color1: #2e2d2d;
   --accent1: hsl(202, 58%, 48%);
@@ -263,6 +263,49 @@ ul {
   height: 60%;
   top: 150px;
   transform: translate(-20%, 0%);
+}
+
+.project-3 {
+  position: relative;
+  height: 90vh;
+  background-image: url(./assets/raja-ampat2.jpg);
+  background-size: cover;
+  background-position: center center;
+  border: 0.5px solid transparent;
+  margin-top: 100px;
+}
+
+#techcare-image {
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  top: 150px;
+  transform: translate(-20%, 0%);
+}
+
+.other-project {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-title {
+  color: rgb(229, 221, 213);
+}
+.card {
+  border: 1px solid white;
+  background-color: rgba(130, 128, 128, 0.981);
+  color: black;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px grey;
+  margin: 25px auto;
+  width: 350px;
+  height: 350px;
+}
+
+.card-image {
+  width: 350px;
+  height: 250px;
 }
 
 #page3-skills {

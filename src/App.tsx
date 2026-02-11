@@ -11,6 +11,14 @@ import { IoMdQuote } from "react-icons/io";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import project1 from "./assets/la-lune.jpg";
 import project2 from "./assets/studio-agatho.jpg";
+import project3 from "./assets/TechCare.png";
+import memory from "./assets/Memory Game.png";
+import wiki from "./assets/Wikipedia Viewer.png";
+import calculator from "./assets/Javascript Calculator.png";
+import weather from "./assets/Weather App.png";
+import drum from "./assets/Drum Machine.png";
+import tictactoe from "./assets/Tic Tac Toe Game.png";
+import pomodoro from "./assets/Pomodoro Clock.png";
 import { FaGithub } from "react-icons/fa";
 import EmailToggle from "./assets/emailtoggle.tsx";
 import FaqToggle1 from "./assets/faqtoggle1.tsx";
@@ -35,8 +43,13 @@ function App() {
     setQuote(getRandomQuote);
   };
 
+  const handleAlert = () => {
+    alert("Due to lack of publishment permission, the link you desire is not available");
+    return;
+  };
+
   return (
-    <div>
+    <div className="container">
       <div id="page1">
         <div id="navbar">
           <img className="personal-logo" src={logo}></img>
@@ -105,7 +118,9 @@ function App() {
             <div className="project-description">To develop a landing page for a restaurant</div>
             <div className="project-link">Dummy Project</div>
           </div>
-          <img src={project1} alt="la-lune" id="la-lune-image" />
+          <a href="https://lalunefrenchbistro.netlify.app/" target="_blank">
+            <img src={project1} alt="la-lune" id="la-lune-image" />
+          </a>
         </div>
         <div className="project-2">
           <div className="project-detail">
@@ -116,7 +131,52 @@ function App() {
             <div className="project-description">To develop a landing page for a designer company</div>
             <div className="project-link">Dummy Project</div>
           </div>
-          <img src={project2} alt="studio-agatho" id="studio-agatho-image" />
+          <a href="https://studio-agatho.netlify.app/" target="_blank">
+            <img src={project2} alt="studio-agatho" id="studio-agatho-image" />
+          </a>
+        </div>
+        <div className="project-3">
+          <div className="project-detail">
+            <div className="project-client">EM Medical Center</div>
+            <div className="project-year">2025 | Jakarta, Indonesia</div>
+            <div className="position">Front End Dev</div>
+            <div className="project-name">EM Medical Center</div>
+            <div className="project-description">To develop a page that show patients' data</div>
+            <div className="project-link">Dummy Project</div>
+          </div>
+          <a href="" onClick={handleAlert}>
+            <img src={project3} alt="TechCare" id="techcare-image" />
+          </a>
+        </div>
+        <div className="other-project">
+          <a className="card" href="https://memorylightgame.netlify.app/" target="_blank">
+            <h3 className="card-title">Memory Sound Game</h3>
+            <img className="card-image" src={memory} alt="" />
+          </a>
+          <a className="card" href="https://tictactoe123game.netlify.app/" target="_blank">
+            <h3 className="card-title">Tic Tac Toe</h3>
+            <img className="card-image" src={tictactoe} alt="" />
+          </a>
+          <a className="card" href="https://codepen.io/Ericko-Marlin/pen/yyJjRbZ?editors=1111" target="_blank">
+            <h3 className="card-title">Show Local Weather</h3>
+            <img className="card-image" src={weather} alt="" />
+          </a>
+          <a className="card" href="https://wikipediaviewer123.netlify.app/" target="_blank">
+            <h3 className="card-title">Wikipedia Viewer</h3>
+            <img className="card-image" src={wiki} alt="" />
+          </a>
+          <a className="card" href="https://javascriptcalculator123.netlify.app/" target="_blank">
+            <h3 className="card-title">Javascript Calculator</h3>
+            <img className="card-image" src={calculator} alt="" />
+          </a>
+          <a className="card" href="https://drum-machine123.netlify.app/" target="_blank">
+            <h3 className="card-title">Drum Machine</h3>
+            <img className="card-image" src={drum} alt="" />
+          </a>
+          <a className="card" href="https://codepen.io/Ericko-Marlin/pen/MYerRVd" target="_blank">
+            <h3 className="card-title">Pomodoro Clock</h3>
+            <img className="card-image" src={pomodoro} alt="" />
+          </a>
         </div>
       </div>
 

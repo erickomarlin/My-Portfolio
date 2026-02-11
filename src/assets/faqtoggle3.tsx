@@ -17,14 +17,16 @@ const FaqToggle3: FC<FaqToggleProps> = () => {
   return (
     <div>
       <div
+        onClick={toggleDisplay}
         style={{
+          width: "100vw",
           display: "flex",
           alignItems: "center",
           paddingLeft: "15px",
           cursor: "pointer",
         }}
       >
-        <FontAwesomeIcon icon={icon} onClick={toggleDisplay} />
+        <FontAwesomeIcon icon={icon} />
         <p
           style={{
             marginLeft: "10px",
