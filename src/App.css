@@ -656,7 +656,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .project-1 {
     height: 250px;
   }
@@ -732,7 +732,7 @@ a {
   }
 
   #certificate-box {
-    width: 480px;
+    width: 420px;
   }
 
   #certificate-box > h2 {
