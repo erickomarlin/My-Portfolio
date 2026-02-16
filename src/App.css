@@ -641,6 +641,10 @@ a {
     transform: translate(-50%, -50%);
   }
 
+  #page4-faq {
+    margin-top: 350px;
+  }
+
   .bio {
     margin-top: 350px;
     width: 75%;
