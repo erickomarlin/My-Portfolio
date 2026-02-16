@@ -26,6 +26,10 @@ import FaqToggle2 from "./assets/faqtoggle2.tsx";
 import FaqToggle3 from "./assets/faqtoggle3.tsx";
 import FaqToggle4 from "./assets/faqtoggle4.tsx";
 import FaqToggle5 from "./assets/faqtoggle5.tsx";
+import Legacy from "./assets/Legacy Front End.png";
+import FEDLibrary from "./assets/FED Library.png";
+import Responsive from "./assets/Responsive Web Design.png";
+import B1English from "./assets/B1 English.png";
 
 interface Quote {
   quote: string;
@@ -111,40 +115,60 @@ function App() {
       <div id="page2-project-container">
         <div className="project-1">
           <div className="project-detail">
-            <div className="project-client">Lune Brothers</div>
-            <div className="project-year">2025 | Jakarta, Indonesia</div>
-            <div className="position">Front End Dev</div>
-            <div className="project-name">La Lune French Bistro</div>
-            <div className="project-description">To develop a landing page for a restaurant</div>
-            <div className="project-link">Dummy Project</div>
+            <div className="top">
+              <div className="project-client">Lune Brothers</div>
+              <div className="project-year">2025 | Jakarta, Indonesia</div>
+            </div>
+            <div className="mid">
+              <div className="position">Front End Dev</div>
+              <div className="project-name">La Lune French Bistro</div>
+              <div className="project-description">To develop a landing page for a restaurant</div>
+            </div>
+            <div className="bottom">
+              <div className="project-link">Dummy Project</div>
+            </div>
           </div>
-          <a href="https://lalunefrenchbistro.netlify.app/" target="_blank">
+          <a href="https://lalunefrenchbistro.netlify.app/" target="_blank" className="la-lune-image-box">
             <img src={project1} alt="la-lune" id="la-lune-image" />
           </a>
         </div>
         <div className="project-2">
           <div className="project-detail">
-            <div className="project-client">Agatha Sisters</div>
-            <div className="project-year">2025 | Jakarta, Indonesia</div>
-            <div className="position">Front End Dev</div>
-            <div className="project-name">Studio Agatho</div>
-            <div className="project-description">To develop a landing page for a designer company</div>
-            <div className="project-link">Dummy Project</div>
+            <div className="top">
+              <div className="project-client">Agatha Sisters</div>
+              <div className="project-year">2025 | Jakarta, Indonesia</div>
+            </div>
+            <div className="mid">
+              <div className="position">Front End Dev</div>
+              <div className="project-name">Studio Agatho</div>
+              <div className="project-description">To develop a landing page for a designer company</div>
+            </div>
+
+            <div className="bottom">
+              <div className="project-link">Dummy Project</div>
+            </div>
           </div>
-          <a href="https://studio-agatho.netlify.app/" target="_blank">
+          <a href="https://studio-agatho.netlify.app/" target="_blank" className="studio-agatho-image-box">
             <img src={project2} alt="studio-agatho" id="studio-agatho-image" />
           </a>
         </div>
         <div className="project-3">
           <div className="project-detail">
-            <div className="project-client">EM Medical Center</div>
-            <div className="project-year">2025 | Jakarta, Indonesia</div>
-            <div className="position">Front End Dev</div>
-            <div className="project-name">EM Medical Center</div>
-            <div className="project-description">To develop a page that show patients' data</div>
-            <div className="project-link">Dummy Project</div>
+            <div className="top">
+              <div className="project-client">EM Medical Center</div>
+              <div className="project-year">2025 | Jakarta, Indonesia</div>
+            </div>
+            <div className="mid">
+              <div className="position">Front End Dev</div>
+              <div className="project-name">EM Medical Center</div>
+              <div className="project-description">To develop a page that show patients' data</div>
+            </div>
+            <div className="bottom">
+              <div className="project-link">Dummy Project</div>
+            </div>
           </div>
-          <a href="" onClick={handleAlert}>
+
+          <a href="" onClick={handleAlert} className="techcare-image-box">
             <img src={project3} alt="TechCare" id="techcare-image" />
           </a>
         </div>
@@ -177,6 +201,16 @@ function App() {
             <h3 className="card-title">Pomodoro Clock</h3>
             <img className="card-image" src={pomodoro} alt="" />
           </a>
+        </div>
+      </div>
+
+      <div id="certificate-box">
+        <h2>Certifications</h2>
+        <div className="certificates">
+          <img className="certificate" src={Legacy} alt="" />
+          <img className="certificate" src={FEDLibrary} alt="" />
+          <img className="certificate" src={Responsive} alt="" />
+          <img className="certificate" src={B1English} alt="" />
         </div>
       </div>
 
@@ -264,7 +298,7 @@ function App() {
             </div>
           </a>
 
-          <a className="contact-link" href="https://www.linkedin.com/in/ericko-marlin-3615387a/" target="_blank">
+          <a className="contact-link" href="https://www.linkedin.com/in/ericko-marlin-0635593b0/" target="_blank">
             <div className="linkedin box">
               <FaLinkedinIn className="icon" />
               <p className="social-media-name">Linkedin</p>
