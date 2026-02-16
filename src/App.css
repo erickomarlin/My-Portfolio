@@ -657,6 +657,11 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+  #page2 {
+    margin-top: 300px;
+    padding-top: 30px;
+  }
+
   .project-1 {
     height: 250px;
   }
