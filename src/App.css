@@ -642,9 +642,9 @@ a {
   }
 
   .bio {
-    margin-top: 70px;
+    margin-top: 350px;
     width: 75%;
-    font-size: 3vw;
+    font-size: 1rem;
   }
 
   #page5-stay-connected {
