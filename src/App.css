@@ -708,7 +708,7 @@ a {
   }
 
   .other-project {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .card {
@@ -729,5 +729,24 @@ a {
   .card-image {
     width: 130px;
     height: 110px;
+  }
+
+  #certificate-box {
+    width: 480px;
+  }
+
+  #certificate-box > h2 {
+    font-size: 1.5rem;
+  }
+
+  .certificates {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .certificate {
+    margin: 15px auto;
+    width: 400px;
+    margin-top: 30px;
   }
 }
