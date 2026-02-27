@@ -26,7 +26,7 @@ const FaqToggle5: FC<FaqToggleProps> = () => {
           cursor: "pointer",
         }}
       >
-        <FontAwesomeIcon icon={icon} onClick={toggleDisplay} />
+        <FontAwesomeIcon icon={icon} />
         <p
           style={{
             marginLeft: "10px",
